@@ -118,7 +118,7 @@ public class EmailTest {
 
         TsvUtil.writeCSV(listList, filePath, fileName, true);
 
-        OhMyEmail.subject("这是一封测试附件邮件")
+        OhMyEmail.subject("api接口每日任务")
                 .from("yaokai@kanda-data.com")
                 .to("1193906652@qq.com , 1782211705@qq.com")
                 .html(sb.toString())
