@@ -69,10 +69,10 @@ public class EmailTest {
     public void testSendAttach() throws Exception {
 
         StringBuffer sb = new StringBuffer();
-        sb.append("<h1 font=red>你好：</h1>").append("API接口当日统计：");
+        sb.append("<h1 font=red>你好：</h1>").append("API接口当日统计：").append("<br/>").append("<br/>");
         String reduceDay = DateUtils.parseDate(DateUtils.reduceDays(new Date(), 1), PATTERN_DAY);
         String toDay = DateUtils.parseDate(new Date(), PATTERN_DAY);
-        sb.append("时间").append(reduceDay).append(" 10:00:00~").append(toDay).append(" 09:10:00").append("<br/>");
+        sb.append("时间:").append(reduceDay).append(" 10:00:00~").append(toDay).append(" 09:10:00").append("<br/>").append("<br/>");
         for (String name : list) {
 //            //查询单个失败次数
             Integer failCount = testResultDao.findFailCount(name);
