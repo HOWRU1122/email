@@ -119,7 +119,7 @@ public class EmailTest {
         TsvUtil.writeCSV(listList, filePath, fileName, true);
 
         OhMyEmail.subject("api接口每日任务")
-                .from("yaokai@kanda-data.com")
+                .from("yaokai")
                 .to("1193906652@qq.com , 1782211705@qq.com , yaokai@kanda-data.com")
                 .html(sb.toString())
                 .attach(new File(filePath + fileName), fileName + ".tsv")
