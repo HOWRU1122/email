@@ -79,7 +79,7 @@ public class EmailTest {
 //            Random failCount = new Random(1);
             Integer count = testResultDao.findCount(name);
 
-            sb.append(name).append(" 调用次数 ").append(count).append("次,失败 " + failCount + "次").append("<br/>");
+            sb.append(name).append("   调用 ").append(count).append("次   失败 " + failCount + "次").append("<br/>");
         }
         List<TestResult> testResults = testResultDao.find();
         List<String> list = new ArrayList<>();
