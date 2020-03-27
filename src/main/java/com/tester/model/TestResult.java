@@ -22,7 +22,6 @@ public class TestResult {
         this.result = result;
         this.url = url;
         this.response = response;
-
     }
 
     public TestResult() {
@@ -71,11 +70,8 @@ public class TestResult {
     public void setUrl(String url) {
         this.url = url;
     }
-    public String getResponse() {
-        return response;
-    }
+    public String getResponse() { return response; }
     public void setResponse(String response) {
         this.response = response;
     }
-
 }
