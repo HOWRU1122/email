@@ -52,15 +52,17 @@ public class EmailTest {
         list.add("DouyinLite");
         list.add("DouyinAwe");
         list.add("Douyin");
+        list.add("Douyinv1");
         list.add("XHSv1");
         list.add("XHSv2");
-        list.add("KaoLa");
-        list.add("KuaiShou");
+        list.add("KuaiShouV1");
+        list.add("KuaiShouV2");
         list.add("JingDong");
         list.add("JingDongCPS");
+        list.add("KaoLa");
         list.add("Pdd");
         list.add("Du");
-        list.add("Douyinv1");
+        list.add("TB");
     }
 
 
@@ -123,7 +125,7 @@ public class EmailTest {
         OhMyEmail.subject("api接口每日任务")
                 .from("yaokai")
                 .to("wangzhou@kanda-data.com , linyuanying@kanda-data.com , yaokai@kanda-data.com , jinzewei@kanda-data.com")
-                // .to("yaokai@kanda-data.com , 1193906652@qq.com")
+               // .to("yaokai@kanda-data.com , 1193906652@qq.com")
 
                 .html(sb.toString())
                 .attach(new File(filePath + fileName), fileName + ".tsv")
