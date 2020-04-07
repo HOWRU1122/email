@@ -63,6 +63,7 @@ public class EmailTest {
         list.add("Pdd");
         list.add("Du");
         list.add("TB");
+        list.add("MeiTuanV2");
     }
 
 
