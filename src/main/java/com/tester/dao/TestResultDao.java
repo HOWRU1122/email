@@ -203,5 +203,55 @@ public class TestResultDao {
         return i;
 
     }
+    public Integer normalCount(String name){
+        int i = 10;
+        try {
+            String sql = "select count(id) as numb from test_result where item = ? and code = 400 and `start_time` > CONCAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY), ' 10:00:00') and `start_time`< CONCAT(CURDATE(), ' 09:20:00');";
+            conn = TestResultDBManger.getConn();
 
+            ps = (PreparedStatement)conn.prepareStatement(sql);
+            ps.setString(1, name);
+
+            System.out.println(ps.toString());
+            rs = ps.executeQuery();
+            while(rs.next()){
+                System.out.println(rs.getInt(1));
+                i = rs.getInt("numb");
+
+
+            }
+
+
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally{
+            //释放资源
+            if(rs!=null){
+                try {
+                    rs.close();
+                } catch (SQLException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+            }
+            if(ps!=null){
+                try {
+                    ps.close();
+                } catch (SQLException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+            }
+            if(conn!=null){
+                try {
+                    conn.close();
+                } catch (SQLException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
+            }
+        }
+        return i;
+
+    }
 }

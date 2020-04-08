@@ -84,7 +84,9 @@ public class EmailTest {
 
             Integer NUllCount = testResultDao.findNullCount(name);
 
-            sb.append(name).append("   调用 ").append(count).append("次   失败  " + failCount + "次").append("    为空  " + NUllCount + "次").append("<br/>");
+            Integer normalCount = testResultDao.normalCount(name);
+
+            sb.append(name).append("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;调用 ").append(count).append("次&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;失败  " + failCount + "次").append("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为空  " + NUllCount + "次").append("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;返回结果为正常情况  " + normalCount + "次").append("<br/>");
         }
         List<TestResult> testResults = testResultDao.find();
         List<String> list = new ArrayList<>();
@@ -126,7 +128,7 @@ public class EmailTest {
         OhMyEmail.subject("api接口每日任务")
                 .from("yaokai")
                 .to("wangzhou@kanda-data.com , linyuanying@kanda-data.com , yaokai@kanda-data.com , jinzewei@kanda-data.com")
-               // .to("yaokai@kanda-data.com , 1193906652@qq.com")
+                //.to("yaokai@kanda-data.com , 1193906652@qq.com")
 
                 .html(sb.toString())
                 .attach(new File(filePath + fileName), fileName + ".tsv")
