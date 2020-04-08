@@ -86,7 +86,7 @@ public class EmailTest {
 
             Integer normalCount = testResultDao.normalCount(name);
 
-            sb.append(name).append("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;调用 ").append(count).append("次&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;失败  " + failCount + "次").append("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为空  " + NUllCount + "次").append("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;返回结果为正常情况  " + normalCount + "次").append("<br/>");
+            sb.append(name).append("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;调用 ").append(count).append("次&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;失败  " + failCount + "次").append("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为空  " + NUllCount + "次").append("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;返回结果失败但为正常情况  " + normalCount + "次").append("<br/>");
         }
         List<TestResult> testResults = testResultDao.find();
         List<String> list = new ArrayList<>();
