@@ -14,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import javax.lang.model.type.ArrayType;
 import java.io.File;
 import java.io.IOException;
 import java.io.StringWriter;
@@ -71,23 +72,31 @@ public class EmailTest {
     @Test
     public void testSendAttach() throws Exception {
 
-        StringBuffer sb = new StringBuffer();
-        sb.append("<h1 font=red>你好：</h1>").append("API接口当日统计：").append("<br/>").append("<br/>");
+        StringBuffer content = new StringBuffer();
+        content.append("<h1 font=red>你好：</h1>").append("API接口当日统计：").append("<br/>").append("<br/>");
         String reduceDay = DateUtils.parseDate(DateUtils.reduceDays(new Date(), 1), PATTERN_DAY);
         String toDay = DateUtils.parseDate(new Date(), PATTERN_DAY);
-        sb.append("时间:").append(reduceDay).append(" 10:00:00~").append(toDay).append(" 09:10:00").append("<br/>").append("<br/>");
+        content.append("时间:").append(reduceDay).append(" 10:00:00~").append(toDay).append(" 09:10:00").append("<br/>").append("<br/>");
         for (String name : list) {
-//            //查询单个失败次数
-            Integer failCount = testResultDao.findFailCount(name);
-//            Random failCount = new Random(1);
             Integer count = testResultDao.findCount(name);
+
+            Integer failCount = testResultDao.findFailCount(name);
 
             Integer NUllCount = testResultDao.findNullCount(name);
 
             Integer normalCount = testResultDao.normalCount(name);
 
-            sb.append(name).append("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;调用 ").append(count).append("次&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;失败  " + failCount + "次").append("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;为空  " + NUllCount + "次").append("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;返回结果失败但为正常情况  " + normalCount + "次").append("<br/>");
+            content.append("<table border=\"5\" style=\"border:solid 1px #E8F2F9;font-size=14px;;font-size:18px;\">");
+            content.append("<tr style=\"background-color: #428BCA; color:#ffffff\"><th align=\"center\">"+name+"</th></tr>");
+            content.append("<tr><th align=\"center\">调用次数</th><td align=\"center\">"+count+"</td></tr>");
+            content.append("<tr><th align=\"center\">失败次数</th><td align=\"center\">"+failCount+"</td></tr>");
+            content.append("<tr><th align=\"center\">为空次数</th><td align=\"center\">"+NUllCount+"</td></tr>");
+            content.append("<tr><th align=\"center\">返回结果失败属于正常情况次数</th><td align=\"center\">"+normalCount+"</td></tr>");
+            content.append("</table>");
+            content.append("&nbsp;&nbsp;&nbsp;");
+            content.append("</body></html>");
         }
+
         List<TestResult> testResults = testResultDao.find();
         List<String> list = new ArrayList<>();
         List<List<String>> listList = new ArrayList<>();
@@ -129,8 +138,7 @@ public class EmailTest {
                 .from("yaokai")
                 .to("wangzhou@kanda-data.com , linyuanying@kanda-data.com , yaokai@kanda-data.com , jinzewei@kanda-data.com")
                 //.to("yaokai@kanda-data.com , 1193906652@qq.com")
-
-                .html(sb.toString())
+                .html(content.toString())
                 .attach(new File(filePath + fileName), fileName + ".tsv")
                 .send();
     }

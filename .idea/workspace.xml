@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="9995cc75-08ae-417b-a18a-406abec0c223" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/EmailTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/EmailTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/EmailTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/EmailTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,15 +32,6 @@
         <option value="Class" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>SMTP_QQ</find>
-      <find>SSL</find>
-      <find>smtp</find>
-      <find>mail.smtp.ssl.socketFactory</find>
-      <find>preparedStatement</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -75,16 +69,6 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/java/com/tester/test" />
-      <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.tester.test" />
-      <recent name="com.tester.cases" />
-      <recent name="com.tester.model" />
-      <recent name="com.tester.controller" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/java/com/tester/cases" />
       <recent name="$PROJECT_DIR$/src/main/java/com/tester/utils" />
@@ -92,13 +76,23 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/tester/dao" />
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.tester.test" />
+      <recent name="com.tester.cases" />
+      <recent name="com.tester.model" />
+      <recent name="com.tester.controller" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/com/tester/test" />
+      <recent name="$PROJECT_DIR$/src/main/resources/mapper" />
+    </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EmailTest">
+  <component name="RunManager" selected="JUnit.EmailTest.testSendAttach">
     <configuration name="DouyinResultTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="email" />
       <extension name="coverage">
@@ -186,8 +180,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EmailTest" />
         <item itemvalue="JUnit.EmailTest.testSendAttach" />
+        <item itemvalue="JUnit.EmailTest" />
         <item itemvalue="JUnit.TestResultTest.testFind" />
         <item itemvalue="JUnit.DouyinResultTest" />
         <item itemvalue="JUnit.DouyinResultTest.getRowsCount" />
@@ -240,7 +234,7 @@
       <workItem from="1583819483895" duration="7688000" />
       <workItem from="1583903393987" duration="1174000" />
       <workItem from="1583915149265" duration="24941000" />
-      <workItem from="1586226468104" duration="3846000" />
+      <workItem from="1586226468104" duration="10618000" />
     </task>
     <servers />
   </component>
@@ -268,7 +262,7 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="501" y="168" key="CommitChangelistDialog2/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1583736507049" />
-    <state width="1727" height="273" key="GridCell.Tab.0.bottom" timestamp="1586395006609">
+    <state width="1727" height="257" key="GridCell.Tab.0.bottom" timestamp="1586768715117">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
     <state width="1610" height="228" key="GridCell.Tab.0.bottom/0.23.1680.965@0.23.1680.965" timestamp="1581384490547" />
@@ -276,9 +270,9 @@
     <state width="1610" height="228" key="GridCell.Tab.0.bottom/0.23.1680.967@0.23.1680.967" timestamp="1581389281402" />
     <state width="1610" height="283" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1583975388825" />
     <state width="1610" height="309" key="GridCell.Tab.0.bottom/0.23.1680.973@0.23.1680.973" timestamp="1581432997347" />
-    <state width="1727" height="273" key="GridCell.Tab.0.bottom/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1586395006609" />
+    <state width="1727" height="257" key="GridCell.Tab.0.bottom/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1586768715117" />
     <state width="1610" height="279" key="GridCell.Tab.0.bottom/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1585565029272" />
-    <state width="1727" height="273" key="GridCell.Tab.0.center" timestamp="1586395006608">
+    <state width="1727" height="257" key="GridCell.Tab.0.center" timestamp="1586768715116">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
     <state width="1610" height="228" key="GridCell.Tab.0.center/0.23.1680.965@0.23.1680.965" timestamp="1581384490546" />
@@ -286,9 +280,9 @@
     <state width="1610" height="228" key="GridCell.Tab.0.center/0.23.1680.967@0.23.1680.967" timestamp="1581389281401" />
     <state width="1610" height="283" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1583975388824" />
     <state width="1610" height="309" key="GridCell.Tab.0.center/0.23.1680.973@0.23.1680.973" timestamp="1581432997346" />
-    <state width="1727" height="273" key="GridCell.Tab.0.center/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1586395006608" />
+    <state width="1727" height="257" key="GridCell.Tab.0.center/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1586768715116" />
     <state width="1610" height="279" key="GridCell.Tab.0.center/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1585565029270" />
-    <state width="1727" height="273" key="GridCell.Tab.0.left" timestamp="1586395006607">
+    <state width="1727" height="257" key="GridCell.Tab.0.left" timestamp="1586768715116">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
     <state width="1610" height="228" key="GridCell.Tab.0.left/0.23.1680.965@0.23.1680.965" timestamp="1581384490546" />
@@ -296,9 +290,9 @@
     <state width="1610" height="228" key="GridCell.Tab.0.left/0.23.1680.967@0.23.1680.967" timestamp="1581389281400" />
     <state width="1610" height="283" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1583975388823" />
     <state width="1610" height="309" key="GridCell.Tab.0.left/0.23.1680.973@0.23.1680.973" timestamp="1581432997346" />
-    <state width="1727" height="273" key="GridCell.Tab.0.left/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1586395006607" />
+    <state width="1727" height="257" key="GridCell.Tab.0.left/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1586768715116" />
     <state width="1610" height="279" key="GridCell.Tab.0.left/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1585565029270" />
-    <state width="1727" height="273" key="GridCell.Tab.0.right" timestamp="1586395006609">
+    <state width="1727" height="257" key="GridCell.Tab.0.right" timestamp="1586768715117">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
     <state width="1610" height="228" key="GridCell.Tab.0.right/0.23.1680.965@0.23.1680.965" timestamp="1581384490547" />
@@ -306,7 +300,7 @@
     <state width="1610" height="228" key="GridCell.Tab.0.right/0.23.1680.967@0.23.1680.967" timestamp="1581389281401" />
     <state width="1610" height="283" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1583975388825" />
     <state width="1610" height="309" key="GridCell.Tab.0.right/0.23.1680.973@0.23.1680.973" timestamp="1581432997347" />
-    <state width="1727" height="273" key="GridCell.Tab.0.right/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1586395006609" />
+    <state width="1727" height="257" key="GridCell.Tab.0.right/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1586768715117" />
     <state width="1610" height="279" key="GridCell.Tab.0.right/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1585565029271" />
     <state width="1610" height="302" key="GridCell.Tab.1.bottom" timestamp="1583918120289">
       <screen x="0" y="23" width="1920" height="1002" />
@@ -332,6 +326,10 @@
     <state width="1610" height="302" key="GridCell.Tab.1.right/0.23.1680.972@0.23.1680.972" timestamp="1582506866459" />
     <state width="1610" height="302" key="GridCell.Tab.1.right/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1583918120289" />
     <state width="1610" height="302" key="GridCell.Tab.1.right/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1583743148174" />
+    <state x="532" y="231" key="Maven.ArtifactSearchDialog" timestamp="1586764574431">
+      <screen x="0" y="23" width="1920" height="1002" />
+    </state>
+    <state x="532" y="231" key="Maven.ArtifactSearchDialog/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1586764574431" />
     <state x="409" y="175" key="SettingsEditor" timestamp="1583915262924">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
