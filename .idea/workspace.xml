@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9995cc75-08ae-417b-a18a-406abec0c223" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tester/dao/TestResultDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tester/dao/TestResultDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +232,7 @@
       <workItem from="1583819483895" duration="7688000" />
       <workItem from="1583903393987" duration="1174000" />
       <workItem from="1583915149265" duration="24941000" />
-      <workItem from="1586226468104" duration="11537000" />
+      <workItem from="1586226468104" duration="11978000" />
     </task>
     <servers />
   </component>
@@ -354,10 +355,11 @@
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
     <state x="621" y="232" width="670" height="675" key="run.anything.popup/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1583919499142" />
-    <state x="591" y="289" width="766" height="735" key="search.everywhere.popup" timestamp="1585564970162">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state x="591" y="275" width="766" height="697" key="search.everywhere.popup" timestamp="1587030830264">
+      <screen x="0" y="23" width="1920" height="1002" />
     </state>
     <state x="517" y="268" width="670" height="676" key="search.everywhere.popup/0.23.1680.973@0.23.1680.973" timestamp="1581432248328" />
+    <state x="591" y="275" width="766" height="697" key="search.everywhere.popup/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1587030830264" />
     <state x="591" y="289" width="766" height="735" key="search.everywhere.popup/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1585564970162" />
   </component>
   <component name="antWorkspaceConfiguration">

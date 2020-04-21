@@ -23,7 +23,7 @@ public class TestResultDao {
     ResultSet rs=null;
     public  List<TestResult> find(){
         List<TestResult> list=new ArrayList<TestResult>();
-        String sql = "select * from test_result where code != 200 and `start_time` > CONCAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY), ' 10:00:00') and `start_time`< CONCAT(CURDATE(), ' 09:20:00');";
+        String sql = "select * from test_result where code != 200 and code != 500 and `start_time` > CONCAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY), ' 10:00:00') and `start_time`< CONCAT(CURDATE(), ' 09:20:00');";
         conn= TestResultDBManger.getConn();
         try {
             ps=(PreparedStatement) conn.prepareStatement(sql);
