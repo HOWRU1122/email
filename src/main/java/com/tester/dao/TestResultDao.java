@@ -54,7 +54,7 @@ public class TestResultDao {
     public Integer findFailCount(String name){
         int i = 10;
         try {
-            String sql = "select count(id) as numb from test_result where item = ? and code != 200 and `start_time` > CONCAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY), ' 10:00:00') and `start_time`< CONCAT(CURDATE(), ' 09:20:00');";
+            String sql = "select count(id) as numb from test_result where item = ? and code != 200 and code != 500 and `start_time` > CONCAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY), ' 10:00:00') and `start_time`< CONCAT(CURDATE(), ' 09:20:00');";
             conn = TestResultDBManger.getConn();
 
             ps = (PreparedStatement)conn.prepareStatement(sql);
