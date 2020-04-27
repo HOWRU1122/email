@@ -66,6 +66,8 @@ public class EmailTest {
         list.add("TB");
         list.add("TBAPP");
         list.add("MeiTuanV2");
+        list.add("Sumaitong");
+        list.add("Alibaba");
     }
 
 
