@@ -139,8 +139,8 @@ public class EmailTest {
 
         OhMyEmail.subject("api接口每日任务")
                 .from("yaokai")
-                //.to("wangzhou@kanda-data.com , linyuanying@kanda-data.com , yaokai@kanda-data.com , jinzewei@kanda-data.com")
-                .to("yaokai@kanda-data.com , 1193906652@qq.com")
+                .to("wangzhou@kanda-data.com , linyuanying@kanda-data.com , yaokai@kanda-data.com , jinzewei@kanda-data.com")
+                //.to("yaokai@kanda-data.com , 1193906652@qq.com")
                 .html(content.toString())
                 .attach(new File(filePath + fileName), fileName + ".tsv")
                 .send();
