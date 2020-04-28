@@ -8,11 +8,11 @@ public class TestResultDBManger{
     private static ResultSet rs = null;
 
     public static Connection getConn() {
-        String url = "jdbc:mysql://rm-bp1q9x9a0735kho0muo.mysql.rds.aliyuncs.com/qc?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8";
+        String url = "jdbc:mysql://47.111.14.225:3306/jiradb?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8";
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             try {
-                conn = (Connection) DriverManager.getConnection(url, "yaokai", "yaokai_0224");
+                conn = (Connection) DriverManager.getConnection(url, "jirauser", "jira");
             } catch (SQLException e) {
                 System.out.println(e.getMessage());
             }
