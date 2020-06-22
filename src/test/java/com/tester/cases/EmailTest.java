@@ -54,6 +54,7 @@ public class EmailTest {
         list.add("DouyinAwe");
         list.add("Douyin");
         list.add("Douyinv1");
+        list.add("DouyinIOS");
         list.add("XHSv1");
         list.add("XHSv2");
         list.add("KuaiShouV1");
@@ -65,9 +66,11 @@ public class EmailTest {
         list.add("Du");
         list.add("TB");
         list.add("TBAPP");
+        list.add("TBV");
         list.add("MeiTuanV2");
         list.add("Sumaitong");
         list.add("Alibaba");
+        list.add("Shopee");
     }
 
 
