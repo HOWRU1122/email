@@ -60,6 +60,7 @@ public class EmailTest {
         list.add("KuaiShouV1");
         list.add("KuaiShouV2");
         list.add("JingDong");
+        list.add("JingDongV2");
         list.add("JingDongCPS");
         list.add("KaoLa");
         list.add("Pdd");
