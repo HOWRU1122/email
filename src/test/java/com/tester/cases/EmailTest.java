@@ -2,11 +2,9 @@ package com.tester.cases;
 
 
 import com.tester.dao.TestResultDao;
-import com.tester.model.TestResult;
 import com.tester.utils.DateUtils;
 import com.tester.utils.OhMyEmail;
 
-import com.tester.utils.TsvUtil;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,18 +12,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import javax.lang.model.type.ArrayType;
-import java.io.File;
-import java.io.IOException;
-import java.io.StringWriter;
-import java.io.Writer;
-import java.net.URL;
 import java.security.GeneralSecurityException;
 import java.util.*;
 
 import static com.tester.utils.DateUtils.PATTERN_DAY;
-import static com.tester.utils.DateUtils.PATTERN_STRING_DAY;
-import static com.tester.utils.OhMyEmail.SMTP_QQ;
+import static com.tester.utils.OhMyEmail.SMTP_163;
 
 
 @RunWith(SpringRunner.class)
@@ -40,113 +31,121 @@ public class EmailTest {
     public void before() throws GeneralSecurityException {
 
 
-        OhMyEmail.config(SMTP_QQ(false), "yaokai@kanda-data.com", "join7Kc2KkWnpTbH");
+        OhMyEmail.config(SMTP_163(false), "13750856517@163.com", "VPAUITGNHJFNRVLN");
 
 
     }
-
-    static List<String> list = new ArrayList();
-
-    static {
-        list = new ArrayList();
-        list.add("DouyinShare");
-        list.add("DouyinLite");
-        list.add("DouyinAwe");
-        list.add("Douyin");
-        list.add("Douyinv1");
-        list.add("DouyinIOS");
-        list.add("XHSv1");
-        list.add("XHSv2");
-        list.add("KuaiShouV1");
-        list.add("KuaiShouV2");
-        list.add("JingDong");
-        list.add("JingDongV2");
-        list.add("JingDongCPS");
-        list.add("KaoLa");
-        list.add("Pdd");
-        list.add("Du");
-        list.add("TB");
-        list.add("TBAPP");
-        list.add("TBV");
-        list.add("MeiTuanV2");
-        list.add("Sumaitong");
-        list.add("Alibaba");
-        list.add("Shopee");
-    }
-
-
 
     @Test
     public void testSendAttach() throws Exception {
-
         StringBuffer content = new StringBuffer();
-        content.append("<h1 font=red>你好：</h1>").append("API接口当日统计：").append("<br/>").append("<br/>");
-        String reduceDay = DateUtils.parseDate(DateUtils.reduceDays(new Date(), 1), PATTERN_DAY);
+
+
+        content.append("<h1 font color =red>你好：</h1>").append("本日数据源抓取量监控：").append("<br/>").append("<br/>");
         String toDay = DateUtils.parseDate(new Date(), PATTERN_DAY);
-        content.append("时间:").append(reduceDay).append(" 10:00:00~").append(toDay).append(" 09:10:00").append("<br/>").append("<br/>");
-        for (String name : list) {
-            Integer count = testResultDao.findCount(name);
+        content.append("时间:").append(toDay).append("<br/>").append("<br/>");
 
-            Integer failCount = testResultDao.findFailCount(name);
+        //用户17788559179
+        int size20833 = testResultDao.Size20833();
+        StringBuilder detail20833 = testResultDao.Detail20833();
+        content.append("<table border=\"5\" style=\"border:solid 1px #E8F2F9;font-size=14px;;font-size:18px;\">");
+        content.append("<tr><th align=\"center\">用户17788559179调用次数</th><td align=\"center\">" + size20833 + "</td></tr>");
+        content.append("<tr><th align=\"center\">用户17788559179调用详情</th><td align=\"center\">" + detail20833 +"</td></tr>");
+        content.append("&nbsp;&nbsp;&nbsp;");
+        content.append("</body></html>");
 
-            Integer NUllCount = testResultDao.findNullCount(name);
+        //用户17816853090
+        int size20886 = testResultDao.Size20886();
+        StringBuilder detail20886 = testResultDao.Detail20886();
+        content.append("<table border=\"5\" style=\"border:solid 1px #E8F2F9;font-size=14px;;font-size:18px;\">");
+        content.append("<tr><th align=\"center\">用户17816853090调用次数</th><td align=\"center\">" + size20886 + "</td></tr>");
+        content.append("<tr><th align=\"center\">用户17816853090调用详情</th><td align=\"center\">" + detail20886 +"</td></tr>");
+        content.append("&nbsp;&nbsp;&nbsp;");
+        content.append("</body></html>");
 
-            Integer normalCount = testResultDao.normalCount(name);
+        //用户13250810885
+        int size20887 = testResultDao.Size20887();
+        StringBuilder detail20887 = testResultDao.Detail20887();
+        content.append("<table border=\"5\" style=\"border:solid 1px #E8F2F9;font-size=14px;;font-size:18px;\">");
+        content.append("<tr><th align=\"center\">用户13250810885调用次数</th><td align=\"center\">" + size20887 + "</td></tr>");
+        content.append("<tr><th align=\"center\">用户13250810885调用详情</th><td align=\"center\">" + detail20887 +"</td></tr>");
+        content.append("&nbsp;&nbsp;&nbsp;");
+        content.append("</body></html>");
 
-            content.append("<table border=\"5\" style=\"border:solid 1px #E8F2F9;font-size=14px;;font-size:18px;\">");
-            content.append("<tr style=\"background-color: #428BCA; color:#ffffff\"><th align=\"center\">"+name+"</th></tr>");
-            content.append("<tr><th align=\"center\">调用次数</th><td align=\"center\">"+count+"</td></tr>");
-            content.append("<tr><th align=\"center\">失败次数</th><td align=\"center\">"+failCount+"</td></tr>");
-            content.append("<tr><th align=\"center\">为空次数</th><td align=\"center\">"+NUllCount+"</td></tr>");
-            content.append("<tr><th align=\"center\">返回结果失败属于正常情况次数</th><td align=\"center\">"+normalCount+"</td></tr>");
-            content.append("</table>");
-            content.append("&nbsp;&nbsp;&nbsp;");
-            content.append("</body></html>");
-        }
+        //用户15958101905
+        int size20888 = testResultDao.Size20888();
+        StringBuilder detail20888 = testResultDao.Detail20888();
+        content.append("<table border=\"5\" style=\"border:solid 1px #E8F2F9;font-size=14px;;font-size:18px;\">");
+        content.append("<tr><th align=\"center\">用户15958101905调用次数</th><td align=\"center\">" + size20888 + "</td></tr>");
+        content.append("<tr><th align=\"center\">用户15958101905调用详情</th><td align=\"center\">" + detail20888 +"</td></tr>");
+        content.append("&nbsp;&nbsp;&nbsp;");
+        content.append("</body></html>");
 
-        List<TestResult> testResults = testResultDao.find();
-        List<String> list = new ArrayList<>();
-        List<List<String>> listList = new ArrayList<>();
-        list.add("id");
-        list.add("start_time");
-        list.add("code");
-        list.add("item");
-        list.add("method");
-        list.add("result");
-        list.add("url");
-        list.add("response");
-        listList.add(list);
-        for (TestResult testResult : testResults) {
-            List<String> testResultlist = new ArrayList<>();
-            testResultlist.add(testResult.getId() + "");
-            testResultlist.add(testResult.getStart_time());
-            testResultlist.add(testResult.getCode());
-            testResultlist.add(testResult.getItem());
-            testResultlist.add(testResult.getMethod());
-            testResultlist.add(testResult.getResult());
-            testResultlist.add(testResult.getUrl());
-            testResultlist.add(testResult.getResponse());
-            listList.add(testResultlist);
-        }
-        String filePath = "/Users/yaokai/";
-        String fileName = "test_result" + DateUtils.parseDate(new Date(), PATTERN_STRING_DAY);
+        //用户13957169665
+        int size20889 = testResultDao.Size20889();
+        StringBuilder detail20889 = testResultDao.Detail20889();
+        content.append("<table border=\"5\" style=\"border:solid 1px #E8F2F9;font-size=14px;;font-size:18px;\">");
+        content.append("<tr><th align=\"center\">用户13957169665调用次数</th><td align=\"center\">" + size20889 + "</td></tr>");
+        content.append("<tr><th align=\"center\">用户13957169665调用详情</th><td align=\"center\">" + detail20889 +"</td></tr>");
+        content.append("&nbsp;&nbsp;&nbsp;");
+        content.append("</body></html>");
 
-        File csvFile = null;
-        File file = new File(filePath);
-        if (!file.exists()) {
-            file.mkdir();
-        }
-        // 定义文件名格式并创建
-        csvFile = File.createTempFile(fileName, ".tsv", new File(filePath));
+        //用户15990717557
+        int size20890 = testResultDao.Size20890();
+        StringBuilder detail20890 = testResultDao.Detail20890();
+        content.append("<table border=\"5\" style=\"border:solid 1px #E8F2F9;font-size=14px;;font-size:18px;\">");
+        content.append("<tr><th align=\"center\">用户15990717557调用次数</th><td align=\"center\">" + size20890 + "</td></tr>");
+        content.append("<tr><th align=\"center\">用户15990717557调用详情</th><td align=\"center\">" + detail20890 +"</td></tr>");
+        content.append("&nbsp;&nbsp;&nbsp;");
+        content.append("</body></html>");
 
-        TsvUtil.writeCSV(listList, filePath, fileName, true);
+        //用户18867517074
+        int size20891 = testResultDao.Size20891();
+        StringBuilder detail20891 = testResultDao.Detail20891();
+        content.append("<table border=\"5\" style=\"border:solid 1px #E8F2F9;font-size=14px;;font-size:18px;\">");
+        content.append("<tr><th align=\"center\">用户18867517074调用次数</th><td align=\"center\">" + size20891 + "</td></tr>");
+        content.append("<tr><th align=\"center\">用户18867517074调用详情</th><td align=\"center\">" + detail20891 +"</td></tr>");
+        content.append("&nbsp;&nbsp;&nbsp;");
+        content.append("</body></html>");
 
-        OhMyEmail.subject("api接口每日任务")
-                .from("yaokai")
-                //.to("wangzhou@kanda-data.com , linyuanying@kanda-data.com , yaokai@kanda-data.com , jinzewei@kanda-data.com")
+        //用户18757558032
+        int size20892 = testResultDao.Size20892();
+        StringBuilder detail20892 = testResultDao.Detail20892();
+        content.append("<table border=\"5\" style=\"border:solid 1px #E8F2F9;font-size=14px;;font-size:18px;\">");
+        content.append("<tr><th align=\"center\">用户18757558032调用次数</th><td align=\"center\">" + size20892 + "</td></tr>");
+        content.append("<tr><th align=\"center\">用户18757558032调用详情</th><td align=\"center\">" + detail20892 +"</td></tr>");
+        content.append("&nbsp;&nbsp;&nbsp;");
+        content.append("</body></html>");
+
+        //用户13031013505
+        int size20893 = testResultDao.Size20893();
+        StringBuilder detail20893 = testResultDao.Detail20893();
+        content.append("<table border=\"5\" style=\"border:solid 1px #E8F2F9;font-size=14px;;font-size:18px;\">");
+        content.append("<tr><th align=\"center\">用户13031013505调用次数</th><td align=\"center\">" + size20893 + "</td></tr>");
+        content.append("<tr><th align=\"center\">用户13031013505调用详情</th><td align=\"center\">" + detail20893 +"</td></tr>");
+        content.append("&nbsp;&nbsp;&nbsp;");
+        content.append("</body></html>");
+
+        //用户16601890722
+        int size20877 = testResultDao.Size20877();
+        StringBuilder detail20877 = testResultDao.Detail20877();
+        content.append("<table border=\"5\" style=\"border:solid 1px #E8F2F9;font-size=14px;;font-size:18px;\">");
+        content.append("<tr><th align=\"center\">用户16601890722调用次数</th><td align=\"center\">" + size20877 + "</td></tr>");
+        content.append("<tr><th align=\"center\">用户16601890722调用详情</th><td align=\"center\">" + detail20877 +"</td></tr>");
+        content.append("&nbsp;&nbsp;&nbsp;");
+        content.append("</body></html>");
+
+
+        //发送邮件
+
+        OhMyEmail.subject("森马监控")
+                .from("森马监控")
+                //.to("yanglei@kanda-data.com , yaokai@kanda-data.com")
                 .to("yaokai@kanda-data.com")
                 .html(content.toString())
-                .attach(new File(filePath + fileName), fileName + ".tsv")
                 .send();
+
     }
 }
+
+

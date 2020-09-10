@@ -2,7 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9995cc75-08ae-417b-a18a-406abec0c223" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tester/controller/HelloWorldController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tester/utils/HttpClientResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/tester/utils/HttpClientUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-03-12" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-03-12" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-03-26" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-03-26" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-03-27" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-03-27" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-04-07" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-04-07" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-04-08" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-04-08" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-04-09" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-04-09" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-04-13" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-04-13" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/mylog.log.2020-04-21" beforeDir="false" afterPath="$PROJECT_DIR$/logs/mylog.log.2020-04-21" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/tester/dao/TestResultDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/tester/dao/TestResultDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/tester/cases/EmailTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/tester/cases/EmailTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/email.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/tester/dao/TestResultDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/tester/dao/TestResultDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/2020-03-11T17-38-38_450.dumpstream" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/2020-03-11T17-38-38_450.dumpstream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/Surefire suite/Surefire test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.tester.cases.EmailTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.tester.cases.EmailTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/bullet_point.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/bullet_point.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/collapseall.gif" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/collapseall.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.tester.cases.EmailTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.tester.cases.EmailTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/failed.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/failed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/jquery-1.7.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/jquery-1.7.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.EmailTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-com.tester.cases.EmailTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/navigator-bullet.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/navigator-bullet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/Surefire test.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/Surefire test.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/classes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/groups.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/groups.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-alphabetical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods-not-run.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/reporter-output.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/reporter-output.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/testng.xml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/Surefire suite/toc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/passed.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/passed.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/skipped.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/skipped.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-reports.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-reports.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/tester/cases/EmailTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/tester/cases/EmailTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +91,6 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -45,6 +98,7 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -60,12 +114,16 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.tester.cases" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/java/com/tester/cases" />
       <recent name="$PROJECT_DIR$/src/main/java/com/tester/utils" />
@@ -74,10 +132,11 @@
       <recent name="$PROJECT_DIR$/src/main/resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.tester.test" />
+      <recent name="com.tester.utils" />
       <recent name="com.tester.cases" />
-      <recent name="com.tester.model" />
       <recent name="com.tester.controller" />
+      <recent name="com.tester.test" />
+      <recent name="com.tester.model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/com/tester/test" />
@@ -89,34 +148,29 @@
       <command value="mvn clean" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EmailTest">
-    <configuration name="DouyinResultTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.EmailTest.testSendAttach">
+    <configuration name="DateUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tester.utils.DateUtils" />
       <module name="email" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tester.test.*" />
+          <option name="PATTERN" value="com.tester.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.tester.test" />
-      <option name="MAIN_CLASS_NAME" value="com.tester.test.DouyinResultTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DouyinResultTest.getRowsCount" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MD5UtilsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.tester.cases.MD5UtilsTest" />
       <module name="email" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tester.test.*" />
+          <option name="PATTERN" value="com.tester.cases.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.tester.test" />
-      <option name="MAIN_CLASS_NAME" value="com.tester.test.DouyinResultTest" />
-      <option name="METHOD_NAME" value="getRowsCount" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -125,7 +179,7 @@
       <module name="email" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tester.cases.*" />
+          <option name="PATTERN" value="com.tester.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -152,17 +206,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestResultTest.testFind" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HttpClientUtilsTest.Post20886" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="email" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tester.test.*" />
+          <option name="PATTERN" value="com.tester.cases.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.tester.test" />
-      <option name="MAIN_CLASS_NAME" value="com.tester.test.TestResultTest" />
-      <option name="METHOD_NAME" value="testFind" />
+      <option name="PACKAGE_NAME" value="com.tester.cases" />
+      <option name="MAIN_CLASS_NAME" value="com.tester.cases.HttpClientUtilsTest" />
+      <option name="METHOD_NAME" value="Post20886" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -177,25 +231,13 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.EmailTest" />
         <item itemvalue="JUnit.EmailTest.testSendAttach" />
-        <item itemvalue="JUnit.TestResultTest.testFind" />
-        <item itemvalue="JUnit.DouyinResultTest" />
-        <item itemvalue="JUnit.DouyinResultTest.getRowsCount" />
+        <item itemvalue="JUnit.HttpClientUtilsTest.Post20886" />
+        <item itemvalue="JUnit.EmailTest" />
+        <item itemvalue="Application.DateUtils" />
+        <item itemvalue="Application.MD5UtilsTest" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -233,96 +275,71 @@
       <workItem from="1583915149265" duration="24941000" />
       <workItem from="1586226468104" duration="16945000" />
       <workItem from="1589008150236" duration="548000" />
-      <workItem from="1590544020268" duration="1660000" />
+      <workItem from="1590544020268" duration="4498000" />
+      <workItem from="1593590694693" duration="346000" />
+      <workItem from="1593591651142" duration="5126000" />
+      <workItem from="1594869966557" duration="483000" />
+      <workItem from="1594970936177" duration="331000" />
+      <workItem from="1594971292789" duration="624000" />
+      <workItem from="1596155562431" duration="590000" />
+      <workItem from="1596500836597" duration="599000" />
+      <workItem from="1596609339663" duration="1000" />
+      <workItem from="1597305417028" duration="958000" />
+      <workItem from="1597306622481" duration="365000" />
+      <workItem from="1597307651151" duration="2804000" />
+      <workItem from="1597624394734" duration="598000" />
+      <workItem from="1597641439138" duration="29000" />
+      <workItem from="1599638447794" duration="187000" />
+      <workItem from="1599640723692" duration="6510000" />
+      <workItem from="1599698314264" duration="3108000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="501" y="168" key="CommitChangelistDialog2" timestamp="1583736507049">
-      <screen x="0" y="23" width="1920" height="1057" />
-    </state>
-    <state x="501" y="168" key="CommitChangelistDialog2/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1583736507049" />
-    <state width="1501" height="244" key="GridCell.Tab.0.bottom" timestamp="1589007879422">
-      <screen x="1920" y="23" width="1680" height="972" />
-    </state>
-    <state width="1610" height="283" key="GridCell.Tab.0.bottom/0.23.1680.972@0.23.1680.972" timestamp="1583975388825" />
-    <state width="1727" height="256" key="GridCell.Tab.0.bottom/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1587449896094" />
-    <state width="1610" height="279" key="GridCell.Tab.0.bottom/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1585565029272" />
-    <state width="1501" height="244" key="GridCell.Tab.0.bottom/0.23.1920.1057/1920.23.1680.972@1920.23.1680.972" timestamp="1589007879422" />
-    <state width="1501" height="244" key="GridCell.Tab.0.center" timestamp="1589007879421">
-      <screen x="1920" y="23" width="1680" height="972" />
-    </state>
-    <state width="1610" height="283" key="GridCell.Tab.0.center/0.23.1680.972@0.23.1680.972" timestamp="1583975388824" />
-    <state width="1727" height="256" key="GridCell.Tab.0.center/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1587449896092" />
-    <state width="1610" height="279" key="GridCell.Tab.0.center/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1585565029270" />
-    <state width="1501" height="244" key="GridCell.Tab.0.center/0.23.1920.1057/1920.23.1680.972@1920.23.1680.972" timestamp="1589007879421" />
-    <state width="1501" height="244" key="GridCell.Tab.0.left" timestamp="1589007879412">
-      <screen x="1920" y="23" width="1680" height="972" />
-    </state>
-    <state width="1610" height="283" key="GridCell.Tab.0.left/0.23.1680.972@0.23.1680.972" timestamp="1583975388823" />
-    <state width="1727" height="256" key="GridCell.Tab.0.left/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1587449896092" />
-    <state width="1610" height="279" key="GridCell.Tab.0.left/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1585565029270" />
-    <state width="1501" height="244" key="GridCell.Tab.0.left/0.23.1920.1057/1920.23.1680.972@1920.23.1680.972" timestamp="1589007879412" />
-    <state width="1501" height="244" key="GridCell.Tab.0.right" timestamp="1589007879421">
-      <screen x="1920" y="23" width="1680" height="972" />
-    </state>
-    <state width="1610" height="283" key="GridCell.Tab.0.right/0.23.1680.972@0.23.1680.972" timestamp="1583975388825" />
-    <state width="1727" height="256" key="GridCell.Tab.0.right/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1587449896093" />
-    <state width="1610" height="279" key="GridCell.Tab.0.right/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1585565029271" />
-    <state width="1501" height="244" key="GridCell.Tab.0.right/0.23.1920.1057/1920.23.1680.972@1920.23.1680.972" timestamp="1589007879421" />
-    <state width="1610" height="302" key="GridCell.Tab.1.bottom" timestamp="1583918120289">
-      <screen x="0" y="23" width="1920" height="1002" />
-    </state>
-    <state width="1610" height="302" key="GridCell.Tab.1.bottom/0.23.1680.972@0.23.1680.972" timestamp="1582506866459" />
-    <state width="1610" height="302" key="GridCell.Tab.1.bottom/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1583918120289" />
-    <state width="1610" height="302" key="GridCell.Tab.1.bottom/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1583743148175" />
-    <state width="1610" height="302" key="GridCell.Tab.1.center" timestamp="1583918120288">
-      <screen x="0" y="23" width="1920" height="1002" />
-    </state>
-    <state width="1610" height="302" key="GridCell.Tab.1.center/0.23.1680.972@0.23.1680.972" timestamp="1582506866459" />
-    <state width="1610" height="302" key="GridCell.Tab.1.center/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1583918120288" />
-    <state width="1610" height="302" key="GridCell.Tab.1.center/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1583743148173" />
-    <state width="1610" height="302" key="GridCell.Tab.1.left" timestamp="1583918120287">
-      <screen x="0" y="23" width="1920" height="1002" />
-    </state>
-    <state width="1610" height="302" key="GridCell.Tab.1.left/0.23.1680.972@0.23.1680.972" timestamp="1582506866458" />
-    <state width="1610" height="302" key="GridCell.Tab.1.left/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1583918120287" />
-    <state width="1610" height="302" key="GridCell.Tab.1.left/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1583743148173" />
-    <state width="1610" height="302" key="GridCell.Tab.1.right" timestamp="1583918120289">
-      <screen x="0" y="23" width="1920" height="1002" />
-    </state>
-    <state width="1610" height="302" key="GridCell.Tab.1.right/0.23.1680.972@0.23.1680.972" timestamp="1582506866459" />
-    <state width="1610" height="302" key="GridCell.Tab.1.right/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1583918120289" />
-    <state width="1610" height="302" key="GridCell.Tab.1.right/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1583743148174" />
-    <state x="532" y="231" key="Maven.ArtifactSearchDialog" timestamp="1586764574431">
-      <screen x="0" y="23" width="1920" height="1002" />
-    </state>
-    <state x="532" y="231" key="Maven.ArtifactSearchDialog/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1586764574431" />
-    <state x="409" y="175" key="SettingsEditor" timestamp="1583915262924">
-      <screen x="0" y="23" width="1920" height="1057" />
-    </state>
-    <state x="409" y="175" key="SettingsEditor/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1583915262924" />
-    <state x="2390" y="341" key="com.intellij.ide.util.TipDialog" timestamp="1590544059667">
+    <state x="2359" y="156" key="#Plugins" timestamp="1594971265094">
       <screen x="1920" y="23" width="1680" height="1027" />
     </state>
-    <state x="2390" y="341" key="com.intellij.ide.util.TipDialog/0.23.1920.1000/1920.23.1680.1027@1920.23.1680.1027" timestamp="1590544059667" />
-    <state x="619" y="465" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1583736361706">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state x="2359" y="156" key="#Plugins/0.23.1920.1000/1920.23.1680.1027@1920.23.1680.1027" timestamp="1594971265094" />
+    <state x="2591" y="262" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1599642094713">
+      <screen x="1920" y="23" width="1680" height="1027" />
     </state>
-    <state x="619" y="465" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1583736361706" />
-    <state x="621" y="232" width="670" height="675" key="run.anything.popup" timestamp="1583919499142">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state x="2591" y="262" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1000/1920.23.1680.1027@1920.23.1680.1027" timestamp="1593330627746" />
+    <state x="2591" y="262" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1920.1001/1920.23.1680.1027@1920.23.1680.1027" timestamp="1599642094713" />
+    <state width="1610" height="240" key="GridCell.Tab.0.bottom" timestamp="1599648616644">
+      <screen x="0" y="23" width="1920" height="1001" />
     </state>
-    <state x="621" y="232" width="670" height="675" key="run.anything.popup/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1583919499142" />
-    <state x="2437" y="267" width="671" height="677" key="search.everywhere.popup" timestamp="1588037788214">
-      <screen x="1920" y="23" width="1680" height="972" />
+    <state width="1501" height="352" key="GridCell.Tab.0.bottom/0.23.1920.1000/1920.23.1680.1027@1920.23.1680.1027" timestamp="1593330096563" />
+    <state width="1610" height="240" key="GridCell.Tab.0.bottom/0.23.1920.1001/1920.23.1680.1027@0.23.1920.1001" timestamp="1599648616644" />
+    <state width="1610" height="240" key="GridCell.Tab.0.bottom/0.23.1920.1001/1920.23.1680.1027@1920.23.1680.1027" timestamp="1599645355527" />
+    <state width="1610" height="240" key="GridCell.Tab.0.center" timestamp="1599648616642">
+      <screen x="0" y="23" width="1920" height="1001" />
     </state>
-    <state x="591" y="275" width="766" height="697" key="search.everywhere.popup/0.23.1920.1002/1920.23.1680.1027@0.23.1920.1002" timestamp="1587030830264" />
-    <state x="591" y="289" width="766" height="735" key="search.everywhere.popup/0.23.1920.1057/1920.23.1680.972@0.23.1920.1057" timestamp="1585564970162" />
-    <state x="2437" y="267" width="671" height="677" key="search.everywhere.popup/0.23.1920.1057/1920.23.1680.972@1920.23.1680.972" timestamp="1588037788214" />
+    <state width="1501" height="352" key="GridCell.Tab.0.center/0.23.1920.1000/1920.23.1680.1027@1920.23.1680.1027" timestamp="1593330096562" />
+    <state width="1610" height="240" key="GridCell.Tab.0.center/0.23.1920.1001/1920.23.1680.1027@0.23.1920.1001" timestamp="1599648616642" />
+    <state width="1610" height="240" key="GridCell.Tab.0.center/0.23.1920.1001/1920.23.1680.1027@1920.23.1680.1027" timestamp="1599645355526" />
+    <state width="1610" height="240" key="GridCell.Tab.0.left" timestamp="1599648616641">
+      <screen x="0" y="23" width="1920" height="1001" />
+    </state>
+    <state width="1501" height="352" key="GridCell.Tab.0.left/0.23.1920.1000/1920.23.1680.1027@1920.23.1680.1027" timestamp="1593330096561" />
+    <state width="1610" height="240" key="GridCell.Tab.0.left/0.23.1920.1001/1920.23.1680.1027@0.23.1920.1001" timestamp="1599648616641" />
+    <state width="1610" height="240" key="GridCell.Tab.0.left/0.23.1920.1001/1920.23.1680.1027@1920.23.1680.1027" timestamp="1599645355526" />
+    <state width="1610" height="240" key="GridCell.Tab.0.right" timestamp="1599648616643">
+      <screen x="0" y="23" width="1920" height="1001" />
+    </state>
+    <state width="1501" height="352" key="GridCell.Tab.0.right/0.23.1920.1000/1920.23.1680.1027@1920.23.1680.1027" timestamp="1593330096563" />
+    <state width="1610" height="240" key="GridCell.Tab.0.right/0.23.1920.1001/1920.23.1680.1027@0.23.1920.1001" timestamp="1599648616643" />
+    <state width="1610" height="240" key="GridCell.Tab.0.right/0.23.1920.1001/1920.23.1680.1027@1920.23.1680.1027" timestamp="1599645355527" />
+    <state x="2260" y="147" key="SettingsEditor" timestamp="1597308139744">
+      <screen x="1920" y="23" width="1680" height="1027" />
+    </state>
+    <state x="2260" y="147" key="SettingsEditor/0.23.1920.1001/1920.23.1680.1027@1920.23.1680.1027" timestamp="1597308139744" />
+    <state x="2424" y="234" width="670" height="675" key="run.anything.popup" timestamp="1599644430190">
+      <screen x="1920" y="23" width="1680" height="1027" />
+    </state>
+    <state x="2424" y="234" width="670" height="675" key="run.anything.popup/0.23.1920.1001/1920.23.1680.1027@1920.23.1680.1027" timestamp="1599644430190" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
