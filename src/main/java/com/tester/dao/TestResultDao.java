@@ -22,37 +22,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class TestResultDao {
 
-    Connection conn=null;
-    PreparedStatement ps=null;
-    ResultSet rs=null;
-    public  List<TestResult> find(){
-        List<TestResult> list=new ArrayList<TestResult>();
-        String sql = "select * from test_result where code != 200 and code != 500 and `start_time` > CONCAT(DATE_SUB(CURDATE(), INTERVAL 1 DAY), ' 10:00:00') and `start_time`< CONCAT(CURDATE(), ' 09:20:00');";
-        conn= TestResultDBManger.getConn();
-        try {
-            ps=(PreparedStatement) conn.prepareStatement(sql);
-            System.out.println(ps.toString());
-            rs=ps.executeQuery();
-            while (rs.next()) {
-                TestResult tr=new TestResult();
-                tr.setId(rs.getInt(1));
-                tr.setStart_time(rs.getString(2));
-                tr.setCode(rs.getString(3));
-                tr.setItem(rs.getString(4));
-                tr.setMethod(rs.getString(5));
-                tr.setResult(rs.getString(6));
-                tr.setUrl(rs.getString(7));
-                tr.setResponse(rs.getString(8));
-
-                list.add(tr);
-
-            }
-        } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        return list;
-    }
 
     String token = "clzqM9hHqWv6VpGjBtYQt10yrTCe474KgaDi0zUkjrn/6EYbz1xtrWLtUmsZcKreD414vCh5NP+ONq0y8wKO2Gwkn3P4qEETj1BGiE26SPygGJWx+CO30jwNj8adE2RbhKKjKua1HXZI4nFfSSEElNjYSKOciHxdVbVUCs8e0XxzmSMhh4yz5T5v7WXfH4E/0e9jxBIGAkbOtb+gFUJwqNtXDfo/+AftAlSxpQ1suH6orxIqfB1+CcM3o50V8HNIQk0KnvYE6qNzvpCCY+SegOEQ83CBmbNEXtRVYmOx0IqM7EO6mB/XrD8ftzlxtaSh";
 
